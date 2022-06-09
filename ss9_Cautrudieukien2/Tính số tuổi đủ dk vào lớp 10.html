@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi vào lớp 10</title>
+</head>
+
+<body>
+<h1>TUỔI ĐỦ ĐIỀU KIỆN VÀO LỚP 10</h1>
+<table>
+    <tr>
+        <td>NHẬP TUỔI</td>
+        <td><input type="number" id="number"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" onclick="tinhTuoi()" value="Kết quả">
+        </td>
+    </tr>
+</table>
+<script>
+    function tinhTuoi() {
+        let tuoi = (document.getElementById("number").value);
+        if (tuoi >= 15) {
+            alert("Đủ điều kiện");
+        } else {
+            alert("Không đủ điều kiện")
+        }
+    }
+</script>
+</body>
+</html>

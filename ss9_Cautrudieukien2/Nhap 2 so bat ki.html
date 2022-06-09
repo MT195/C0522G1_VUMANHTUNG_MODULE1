@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A chia het cho B</title>
+</head>
+<body>
+<h1>TÌM CÁC SỐ CHIA HẾT CHO NHAU</h1>
+<table>
+    <tr>
+        <td>Số A</td>
+        <td><input type="number" id="numbera"></td>
+    </tr>
+    <tr>
+        <td>Số B</td>
+        <td><input type="number" id="numberb"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" onclick="phepchia()" value="Kết quả">
+        </td>
+    </tr>
+</table>
+
+<script>
+    function phepchia() {
+let numbera= parseInt(document.getElementById("numbera").value);
+let numberb= parseInt(document.getElementById("numberb").value);
+if (numbera % numberb === 0){
+    alert("Chia hết")
+} else {
+    alert("Không chia hết")
+}
+
+    }
+</script>
+</body>
+</html>

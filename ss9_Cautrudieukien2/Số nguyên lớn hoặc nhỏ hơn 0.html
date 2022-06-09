@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TÌM GIÁ TRỊ SỐ NGUYÊN</h1>
+<table>
+    <tr>
+        <td>NHẬP SỐ</td>
+        <td><input type="number" id="number"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" onclick="soNguyen()" value="Kết quả">
+        </td>
+    </tr>
+</table>
+<script>
+    function soNguyen() {
+        let songuyen = (document.getElementById("number").value);
+        if (songuyen > 0) {
+            alert("Lớn hơn 0")
+        } else if (songuyen < 0) {
+            alert("Nhỏ hơn 0")
+        } else {
+            alert("Bằng 0")
+        }
+
+
+    }
+</script>
+</body>
+
+</html>

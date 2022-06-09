@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH 10% HOA HỒNG THEO DOANH SỐ</title>
+</head>
+<body>
+<hi>DOANH SỐ</hi>
+<input type="number" min="10000000" id="doanh_so">
+<input type="button" onclick="tinhHoaHong()" value="Kết quả">
+
+<script>
+    function tinhHoaHong() {
+        let tongdoanhso=document.getElementById("doanh_so").value;
+        let hoahong;
+        if (tongdoanhso < 10000000) {
+            hoahong = 0;}
+        else if (tongdoanhso >= 10000000) {
+            hoahong = tongdoanhso  * 10 / 100;}
+        alert("Hoa hồng :" + hoahong);
+    }
+</script>
+</body>
+</html>

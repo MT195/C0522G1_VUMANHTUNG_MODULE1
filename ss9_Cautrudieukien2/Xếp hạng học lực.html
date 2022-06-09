@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KẾT QUẢ HỌC TẬP</title>
+</head>
+<body>
+<div id="Xếp hạng"></div>
+<script>
+    let diemKiemTra=+prompt("Nhập điểm");
+    let diemGiuaKy=+prompt("Nhập điểm");
+    let diemCuoiKy=+prompt("Nhập điểm");
+    let tongDiem=(diemKiemTra+diemGiuaKy*2+diemCuoiKy*3)/6;
+    let hocLuc;
+    if (tongDiem<4){
+        hocLuc="Học lực Yếu"
+    }else if (tongDiem<6){
+        hocLuc="Học Lực Trung Bình"
+    }else if (tongDiem<8){
+        hocLuc="Học lực Khá"
+    }else {
+        hocLuc="Học Lực Giỏi"
+    }
+    document.getElementById("Xếp hạng").innerHTML="Điểm Kiểm Tra: "+diemKiemTra
+        +"<br> Điểm Giữa Kỳ: "+diemGiuaKy
+        +"<br>Điểm Cuối Kỳ: "+diemCuoiKy
+        +"<br>Tổng điểm trung bình là :"+tongDiem
+        +"<br> "+hocLuc;
+</script>
+</body>
+</html>
